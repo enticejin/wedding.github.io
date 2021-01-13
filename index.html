@@ -50,6 +50,10 @@
 	    100%{ text-shadow: 0 0 4px #4cc134}  
 }	
 </style>
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 </head>
 <body id="menu" class="alt-bg">
 <!--[if lt IE 8]>
@@ -135,7 +139,8 @@
     <section class="content">
               <header class="p-title">
         <h3>庆宴时间：<i class="ion ion-compose"></i></h3>
-        <h4 class="subhead"><p>2021年 <strong>1月30日(农历腊月十八)</strong></p></h4>
+        <h4 class="subhead"><p><strong>新郎：2021年1月30日(农历腊月十八)</strong></p></h4>
+        <h4 class="subhead"><p><strong>新娘：2021年1月29日(农历腊月十七)</strong></p></h4>
       </header>
               <div>
       </div>
@@ -157,13 +162,7 @@
         <h3>关于我们的故事 <i class="ion ion-android-information"> </i> </h3>
         
 		<div>
-			<img src="img/me.png">
-			<img src="img/me.png">
-			<img src="img/me.png">
-			<img src="img/me.png">
-			<img src="img/me.png">
-			<img src="img/me.png">
-			<img src="img/me.png">
+			<img src="myphoto/IMG_4671.JPG">
 		</div>
       </header>
 			<article class="text">
@@ -171,16 +170,8 @@
                         <p>盘飧市远无兼味，樽酒家贫只旧醅。 </p>
                     </article>
             </section>
-    <footer class="p-footer p-scrolldown"> <a href="#contact">
-      <div class="arrow-d">
-        <div class="before">Contact</div>
-        <div class="after">Message</div>
-        <div class="circle"><i class="ion ion-mouse"></i></div>
-      </div>
-      </a> </footer>
   </div>
           <!-- End of about us page --> 
-          
           <!-- Begin of Contact page   -->
           <div class="section page-contact page page-cent  bg-color" data-bgcolor="rgba(95, 25, 208, 0.88)s" id="s-contact"> 
     <!-- Begin of contact information -->
@@ -193,7 +184,7 @@
             <!--<li>
 									<a title="Contact" href="#contact/information"><i class="ion ion-location"></i></a>
 								</li>-->
-            <li> <a title="Message" href="#contact/message"><i class="ion ion-email"></i></a> </li>
+            
           </ul>
                 </header>
         <!-- Begin Of Page SubSction -->
@@ -202,10 +193,10 @@
             <div class="medium-6 columns left">
                       <ul>
                 <li>
-                          <h4>地点：</h4>
-                          <p style="color: darkred;">新郎：桐梓县楚米镇高山村还田</p>
-						  
-                          <p style="color: darkred;">新娘：桐梓县燎原镇大关村野猪台</p>
+                          <h4>地址：</h4>
+                          <p style="color: darkred;">新郎：<a href="https://map.baidu.com/poi/%E8%BF%98%E7%94%B0/@11887029.91,3264641.2749118945,11.73z?uid=a1418eb46bde957eebe58260&ugc_type=3&ugc_ver=1&device_ratio=1&compat=1&querytype=detailConInfo&da_src=shareurl" target="_blank" >桐梓县楚米镇高山村还田</a></p>
+                          <p style="color: darkred;">新娘：<a href="https://map.baidu.com/search/%E9%87%8E%E7%8C%AA%E5%8F%B0/@11890247.085,3239564.98,14.34z?querytype=s&da_src=shareurl&wd=%E9%87%8E%E7%8C%AA%E5%8F%B0&c=262&src=0&pn=0&sug=0&l=13&b=(11855332.45227972,3228993.18959795;11916132.11619014,3258696.3587375195)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&device_ratio=1" target="_blank">
+						  	  桐梓县燎原镇大关村野猪台</a></p>
                         </li>
                 <li>
                           <h4>联系电话</h4>
@@ -219,17 +210,9 @@
                 
                 <!-- legal notice -->
                 <li class="show-for-medium-up">
-                          <h4>查看地图</h4>
-                          <p><a href="https://map.baidu.com/poi/%E8%BF%98%E7%94%B0/@11887029.91,3264641.2749118945,11.73z?uid=a1418eb46bde957eebe58260&ugc_type=3&ugc_ver=1&device_ratio=1&compat=1&querytype=detailConInfo&da_src=shareurl" target="_blank" style="color: yellow;">点击查看新郎家位置</a></p>
-						  <p>
-						  	  <a href="https://map.baidu.com/search/%E9%87%8E%E7%8C%AA%E5%8F%B0/@11890247.085,3239564.98,14.34z?querytype=s&da_src=shareurl&wd=%E9%87%8E%E7%8C%AA%E5%8F%B0&c=262&src=0&pn=0&sug=0&l=13&b=(11855332.45227972,3228993.18959795;11916132.11619014,3258696.3587375195)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&device_ratio=1" target="_blank" style="color: darkred;>
-						  	  点击查看新娘家位置</a>
-						  </p>
                           
                 </li>
                 <li> 
-				
-                          <p class="small" style="color: yellow;">点击查看新娘家位置</p>
                         </li>
               </ul>
                     </div>
@@ -265,7 +248,7 @@
                     <input id="mes-name" name="name" type="text" placeholder="您的名字" required>
                   </div>
                           <div class="buttons">
-                    <button id="submit-message" class="button email_b" name="submit_message">发送</button>
+                    <button onclick= "send()"id="submit-message" class="button email_b" name="submit_message">发送</button>
                   </div>
                         </div>
                 <div class="fields clearfix">
@@ -288,6 +271,11 @@
         <!-- End Of Page SubSction --> 
       </section>
             </div>
+			<footer class="p-footer p-scrolldown"> <a href="#about-us">
+			  <div class="arrow-d">
+			    <div class="circle"><i class="ion ion-mouse"></i></div>
+			  </div>
+			  </a> </footer>
     <!-- End of contact message --> 
   </div>
           <!-- End of Contact page  --> 
