@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 
 <!-- Page Title Here -->
-<title>葛进进&龚正连婚礼邀请函</title>
+<title id="title">葛进进&龚正连婚礼邀请函 &nbsp;&nbsp;&nbsp;&nbsp;</title>
 
 <!-- Page Description Here -->
 <meta name="description" content="A responsive coming soon template, un template HTML pour une page en cours de construction">
@@ -48,7 +48,7 @@
 	    0%{ text-shadow: 0 0 4px #4cc134}  
 	    50%{ text-shadow: 0 0 40px #4cc134}  
 	    100%{ text-shadow: 0 0 4px #4cc134}  
-}	
+}
 </style>
 <!-- 引入样式 -->
 <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
@@ -159,10 +159,8 @@
           <div class="section page-about page page-cent" id="s-about-us">
     <section class="content">
               <header class="p-title">
-        <h3>关于我们的故事 <i class="ion ion-android-information"> </i> </h3>
-        
+        <h3>照片墙 <i class="ion ion-android-information"> </i> </h3>
 		<div>
-			<img src="myphoto/IMG_4671.JPG">
 			<img src="img/img/20210114091639.png">
 			<img src="img/img/20210114091654.png">
 			<img src="img/img/20210114091707.png">
@@ -330,6 +328,15 @@
    supplied: "mp3"
   });
  });
+ // 滚动标题
+ setInterval(function() {
+     var tag = document.getElementById('title');//根据id获取元素
+     var content = tag.innerText; // 获取title标签的文本内容
+     var firstStr = content.charAt(0); // 获取第一个字
+     var surplue = content.substring(1, content.length); // 删除第一个字
+     var new_content = surplue + firstStr; // 把第一个字加到最后面
+     tag.innerText = new_content;
+ }, 150);            
 </script>
 <div id="jquery_jplayer_1"></div>
 <div id="jp_container_1"> <a href="#" class="jp-play">
